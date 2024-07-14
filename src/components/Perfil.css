@@ -1,0 +1,79 @@
+/* Perfil.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+.perfil-container {
+  display: flex;
+  flex-direction: column; /* Cambiamos a dirección de columna para apilar los elementos */
+  align-items: center; /* Centramos los elementos horizontalmente */
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.foto-container {
+  margin-top: 20px; /* Agregamos margen superior para separar la imagen del borde superior */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-container {
+  text-align: left;
+  margin-top: 20px; /* Agregamos margen superior para separar la información de la imagen */
+}
+
+.info-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.info-container p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.boton-container {
+  margin-top: auto; /* Hace que el contenedor de botones se mueva hacia abajo y se ajuste al final */
+  text-align: center; /* Centra los botones */
+}
+
+.boton-editar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.boton-editar:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+

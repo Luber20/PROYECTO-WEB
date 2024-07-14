@@ -1,0 +1,106 @@
+/* Editar.css */
+
+.editar-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.editar-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.editar-container .form-group {
+    margin-bottom: 20px;
+}
+
+.editar-container .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.editar-container .form-group input,
+.editar-container .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.editar-container .form-group input:focus,
+.editar-container .form-group select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+.editar-container .preview-imagen {
+    display: block;
+    margin-top: 10px;
+    max-width: 100px;
+    border-radius: 5px;
+}
+
+.editar-container .boton-container {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.editar-container .boton-guardar,
+.editar-container .boton-volver {
+    flex: 1; /* Para que ambos botones ocupen el mismo ancho */
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.editar-container .boton-guardar {
+    background-color: #333;
+    color: white;
+}
+
+.editar-container .boton-guardar:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.editar-container .boton-volver {
+    background-color: #6c757d;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.editar-container .boton-volver:hover {
+    background-color: #5a6268;
+    transform: translateY(-3px);
+}

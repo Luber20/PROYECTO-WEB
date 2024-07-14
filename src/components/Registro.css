@@ -1,0 +1,149 @@
+body {
+    font-family: 'comic neue', sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #ddd;
+}
+
+.header-logo {
+    width: 50px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: auto;
+    margin-right: 20px; /* Espacio entre el logo y el texto */
+}
+
+.header-registro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea el contenido al inicio */
+    background: linear-gradient(145deg, #434343, #000000);
+    color: white;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #555;
+}
+
+.Texto-head {
+    color: white; /* Color blanco */
+    text-decoration: none;
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    margin-left: 10px; /* Espacio entre el logo y el texto */
+    position: absolute;
+    margin-top: 10px;
+}
+
+.boton-registro {
+    font-family: inherit;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    margin-top: 20px;
+    width: 70%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 14vh;
+}
+
+.boton-registro:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cuerpo-registro {
+    padding: 10px;
+    width: 700px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.texto-registro {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.cuerpo-registro form input {
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 2px solid var(--oscuro);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease;
+}
+
+.cuerpo-registro form input:focus {
+    border-color: #007bff;
+}
+
+.cuerpo-registro form select {
+    font-family: 'comic neue', sans-serif;
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 2px solid var(--oscuro);
+    color: var(--oscuro);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease;
+}
+
+.cuerpo-registro form select:focus {
+    border-color: #007bff;
+}
+
+.izquierda-registro,
+p {
+    margin-left: 25px;
+}
+
+.contratexto {
+    font-size: small;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.t-registro {
+    margin-left: 4vh;
+}
